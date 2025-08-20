@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UniTrack</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header class="header">
+            <h2 class="header-title">UniTrack Dashboard</h2>
+            <div class="user-info">
+                <span id="student-name">Student</span>
+                <button class="logout-btn" id="logout-btn" title="Logout"><i class="bi bi-box-arrow-right"></i></button>
+            </div>
+        </header>
+
+        <div class="content-body">
+            <h3 id="welcome-message">Welcome!</h3>
+            <p class="subtitle">Here are your enrolled courses for this semester.</p>
+
+            <div class="card">
+                <h3>My Enrolled Courses</h3>
+                <ul id="schedule-list" class="course-list">
+                    <li>Loading your courses...</li>
+                </ul>
+            </div>
+
+            <div class="scan-card">
+                <h4>Ready for Class?</h4>
+                <p>Click the button below to scan the attendance QR code.</p>
+                <button id="scan-qr-btn" class="btn btn-primary btn-large">
+                    <i class="bi bi-qr-code-scan"></i> Scan QR Code
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
