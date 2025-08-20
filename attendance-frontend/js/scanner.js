@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function onScanSuccess(decodedText, decodedResult) {
         html5QrcodeScanner.clear();
         try {
-            const response = await fetch('http://localhost:5000/api/attendance/mark', {
+            const response = await fetch('https://unitrack-backend-8oyb.onrender.com/api/attendance/mark', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

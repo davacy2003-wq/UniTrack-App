@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // 2. Use the token to ask the backend "Who am I?"
-            const response = await fetch('http://localhost:5000/api/users/profile', {
+            const response = await fetch('https://unitrack-backend-8oyb.onrender.com/api/users/profile', {
                 headers: { 'Authorization': `Bearer ${token}` },
             });
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- FETCH ENROLLED COURSES ---
         async function fetchEnrolledCourses() {
             try {
-                const response = await fetch('http://localhost:5000/api/courses/mycourses', {
+                const response = await fetch('https://unitrack-backend-8oyb.onrender.com/api/courses/mycourses', {
                     headers: { 'Authorization': `Bearer ${token}` },
                 });
                 if (!response.ok) throw new Error('Could not fetch courses.');

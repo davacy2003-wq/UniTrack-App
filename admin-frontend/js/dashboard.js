@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchAllData() {
         try {
             const [usersRes, coursesRes] = await Promise.all([
-                fetch('http://localhost:5000/api/users', { headers: { 'Authorization': `Bearer ${token}` } }),
-                fetch('http://localhost:5000/api/courses', { headers: { 'Authorization': `Bearer ${token}` } })
+                fetch('https://unitrack-backend-8oyb.onrender.com/api/users', { headers: { 'Authorization': `Bearer ${token}` } }),
+                fetch('https://unitrack-backend-8oyb.onrender.com/api/courses', { headers: { 'Authorization': `Bearer ${token}` } })
             ]);
             const users = await usersRes.json();
             allCourses = await coursesRes.json();
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // New function to fetch and display attendance records
     async function fetchAttendanceRecords() {
-        let url = 'http://localhost:5000/api/attendance/records';
+        let url = 'https://unitrack-backend-8oyb.onrender.com/api/attendance/records';
         const courseId = attendanceCourseFilter.value;
         if (courseId) {
             url += `?courseId=${courseId}`;
