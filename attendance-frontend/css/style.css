@@ -1,6 +1,6 @@
 /* --- Variables & Basic Reset --- */
 :root {
-    --primary-color: #007bff;
+    --primary-color: #11573a;
     --dark-color: #212529;
     --body-bg: #f9fafb;
     --card-bg: #ffffff;
@@ -71,7 +71,7 @@ body {
     gap: 8px;
 }
 .btn-primary { background-color: var(--primary-color); color: #fff; }
-.btn-primary:hover { background-color: #0069d9; }
+.btn-primary:hover { background-color: #11573a; }
 .btn-secondary { background-color: #6c757d; color: #fff; }
 .btn-large { padding: 16px 24px; font-size: 1.1rem; }
 .form-group { margin-bottom: 16px; }
@@ -87,7 +87,7 @@ body {
 }
 .course-list li:last-child { border-bottom: none; }
 .scan-card {
-    background: linear-gradient(45deg, var(--primary-color), #0056b3);
+    background: linear-gradient(45deg, var(--primary-color), #11573a);
     color: white;
     text-align: center;
     padding: 30px;
